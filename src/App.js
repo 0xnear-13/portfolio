@@ -95,7 +95,7 @@ export default function App() {
           if (e.isIntersecting) setActive(e.target.id);
         });
       },
-      { threshold: 0.4 }
+      { threshold: 0.4 },
     );
     NAV_ITEMS.forEach((id) => {
       const el = document.getElementById(id);
@@ -150,7 +150,7 @@ export default function App() {
           <h1 className="hero-name">
             <GlitchText text="GIORGI JAKELI" />
           </h1>
-          <h2 className="hero-title">Junior Cybersecurity Analyst</h2>
+          <h2 className="hero-title"> Cybersecurity Analyst</h2>
 
           <div className="terminal">
             <div className="terminal-header">
@@ -180,7 +180,7 @@ export default function App() {
             </div>
             <div className="stat-divider" />
             <div className="stat">
-              <span className="stat-num">#2</span>
+              <span className="stat-num">#1</span>
               <span className="stat-label">Georgia HTB</span>
             </div>
             <div className="stat-divider" />
