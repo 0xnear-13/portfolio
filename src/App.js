@@ -168,7 +168,7 @@ export default function App() {
                 text="Industry-recognized certifications"
                 delay={1000}
               />
-              <TerminalLine text="HTB Georgia Rank: #2 / Near13" delay={1600} />
+              <TerminalLine text="HTB Georgia Rank: #1 / Near13" delay={1600} />
               <TerminalLine text="Seeking real-world experience" delay={2200} />
             </div>
           </div>
@@ -406,7 +406,7 @@ export default function App() {
               <div className="contact-icon htb-icon">⬡</div>
               <div>
                 <div className="contact-label">Hack The Box</div>
-                <div className="contact-value">Near13 · #2 in Georgia</div>
+                <div className="contact-value">Near13 · #1 in Georgia</div>
               </div>
             </a>
           </div>
