@@ -406,7 +406,7 @@ export default function App() {
               <div className="contact-icon htb-icon">⬡</div>
               <div>
                 <div className="contact-label">Hack The Box</div>
-                <div className="contact-value">Near13 · #1 in Georgia</div>
+                <div className="contact-value">Near13</div>
               </div>
             </a>
           </div>
