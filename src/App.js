@@ -1,12 +1,24 @@
 import { useState, useEffect } from "react";
 import "./App.css";
 
+import pnptPdf from "./assets/pnpt.pdf";
 import comptiaPdf from "./assets/comptia.pdf";
 import googlePdf from "./assets/google.pdf";
 
 const CERTS = [
   {
     id: 1,
+    issuer: "TCM Security",
+    name: "PNPT",
+    date: "November 20, 2026",
+    code: "Certificate #201124960",
+    //verifyUrl: "https://certified.tcm-sec.com",
+    accent: "#c026d3",
+    bg: "#140a1a",
+    pdf: pnptPdf,
+  },
+  {
+    id: 2,
     issuer: "CompTIA",
     name: "Security+",
     date: "March 24, 2025",
@@ -17,7 +29,7 @@ const CERTS = [
     pdf: comptiaPdf,
   },
   {
-    id: 2,
+    id: 3,
     issuer: "Google / Coursera",
     name: "Google Cybersecurity",
     date: "April 8, 2025",
@@ -38,6 +50,8 @@ const SKILLS = [
   { name: "SIEM Tools", cat: "sec" },
   { name: "Threat Analysis", cat: "sec" },
   { name: "Penetration Testing", cat: "sec" },
+  { name: "Active Directory", cat: "sec" },
+  { name: "Privilege Escalation", cat: "sec" },
   { name: "Incident Response", cat: "sec" },
 ];
 
@@ -150,7 +164,7 @@ export default function App() {
           <h1 className="hero-name">
             <GlitchText text="GIORGI JAKELI" />
           </h1>
-          <h2 className="hero-title"> Cybersecurity Analyst</h2>
+          <h2 className="hero-title">Penetration Tester</h2>
 
           <div className="terminal">
             <div className="terminal-header">
@@ -168,14 +182,18 @@ export default function App() {
                 text="Industry-recognized certifications"
                 delay={1000}
               />
-              <TerminalLine text="HTB Georgia Rank: #1 / Near13" delay={1600} />
-              <TerminalLine text="Seeking real-world experience" delay={2200} />
+              <TerminalLine
+                text="PNPT Certified — Offensive Security"
+                delay={1600}
+              />
+              <TerminalLine text="HTB Georgia Rank: #1 / Near13" delay={2200} />
+              <TerminalLine text="Seeking real-world experience" delay={2800} />
             </div>
           </div>
 
           <div className="hero-stats">
             <div className="stat">
-              <span className="stat-num">2</span>
+              <span className="stat-num">3</span>
               <span className="stat-label">Certs</span>
             </div>
             <div className="stat-divider" />
@@ -238,12 +256,12 @@ export default function App() {
                 width="16"
                 height="16"
                 fill="currentColor"
-                class="bi bi-linkedin"
+                className="bi bi-linkedin"
                 viewBox="0 0 16 16"
               >
                 <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
               </svg>
-              Linkdin
+              LinkedIn
             </a>
             <button
               className="btn btn-primary"
@@ -339,11 +357,11 @@ export default function App() {
             reach out.
           </p>
           <div className="contact-grid">
-            <a href="mailto:Giorgijakeli7@gmail.com" className="contact-card">
+            <a href="mailto:giorgijakeli7@gmail.com" className="contact-card">
               <div className="contact-icon">✉</div>
               <div>
                 <div className="contact-label">Email</div>
-                <div className="contact-value">Giorgijakeli7@gmail.com</div>
+                <div className="contact-value">giorgijakeli7@gmail.com</div>
               </div>
             </a>
             <a href="tel:+995579872727" className="contact-card">
@@ -375,7 +393,7 @@ export default function App() {
               </div>
             </a>
             <a
-              href="https://github.com/0xnear-13"
+              href="https://www.linkedin.com/in/giorgi-jakeli-5185a0226/"
               target="_blank"
               rel="noreferrer"
               className="contact-card"
@@ -386,14 +404,14 @@ export default function App() {
                   width="18"
                   height="18"
                   fill="currentColor"
-                  class="bi bi-linkedin"
+                  className="bi bi-linkedin"
                   viewBox="0 0 16 16"
                 >
                   <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
                 </svg>
               </div>
               <div>
-                <div className="contact-label">Linkdin</div>
+                <div className="contact-label">LinkedIn</div>
                 <div className="contact-value">Giorgi Jakeli</div>
               </div>
             </a>
@@ -415,7 +433,7 @@ export default function App() {
 
       <footer className="footer">
         <span className="footer-text">
-          © 2025 Giorgi Jakeli — Built with React
+          © 2026 Giorgi Jakeli — Built with React
         </span>
         <span className="footer-loc">📍 Georgia, Tbilisi</span>
       </footer>
