@@ -186,7 +186,7 @@ export default function App() {
                 text="PNPT Certified — Offensive Security"
                 delay={1600}
               />
-              <TerminalLine text="HTB Georgia Rank: #1 / Near13" delay={2200} />
+              <TerminalLine text="HTB Georgia Rank: #2 / Near13" delay={2200} />
               <TerminalLine text="Seeking real-world experience" delay={2800} />
             </div>
           </div>
@@ -198,7 +198,7 @@ export default function App() {
             </div>
             <div className="stat-divider" />
             <div className="stat">
-              <span className="stat-num">#1</span>
+              <span className="stat-num">#2</span>
               <span className="stat-label">Georgia HTB</span>
             </div>
             <div className="stat-divider" />
